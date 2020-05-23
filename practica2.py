@@ -556,7 +556,8 @@ def cambiarCorte(valor):
                 val_corte = 0
 
         imagep = imageDICOM.pixel_array[val_corte]
-        print(imagep.shape)
+        print(np.unique(imagep))
+        print(val_corte)
         image = cp.deepcopy(imagep)
     else:
         if "imagenes_dicom/0-27993/" or "CT_Lung/" or "RM_Brain_3D-SPGR/" in filename:
